@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+	version="2.0">
+
+
+	<!-- 这里放着各种跳转页面 -->
+
+	<navigation-rule>
+		<display-name>login.xhtml</display-name>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/mainview.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+	<navigation-rule>
+		<display-name>login.xhtml</display-name>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>failure</from-outcome>
+			<to-view-id>/error.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+	<navigation-rule>
+		<display-name>login.xhtml</display-name>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>fetch</from-outcome>
+			<to-view-id>/fetchuser.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>login.xhtml</display-name>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>add</from-outcome>
+			<to-view-id>/addUser.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>fetchuser.xhtml</display-name>
+		<from-view-id>/fetchuser.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>Yes</from-outcome>
+			<to-view-id>/fechsuc.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+
+	<navigation-rule>
+		<display-name>fetchuser.xhtml</display-name>
+		<from-view-id>/fetchuser.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>No</from-outcome>
+			<to-view-id>/fetchuser.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>addUser.xhtml</display-name>
+		<from-view-id>/addUser.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>main</from-outcome>
+			<to-view-id>/mainview.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>addUser.xhtml</display-name>
+		<from-view-id>/addUser.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>stay</from-outcome>
+			<to-view-id>/addUser.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<!-- 测试部分 -->
+	
+	  
+    <!-- <managed-bean>  
+        <managed-bean-name>userBean</managed-bean-name>  
+        <managed-bean-class>  
+            javaee.jsf.UserBean 
+        </managed-bean-class>  
+        <managed-bean-scope>request</managed-bean-scope>  
+    </managed-bean>  --> 
+  
+	
+	<!-- <managed-bean>
+        <managed-bean-name>tableBean</managed-bean-name>
+        <managed-bean-class>
+            javaee.jsf.bookTable
+        </managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean> -->
+
+	<!--验证器-->
+	<!-- <validator>
+		<validator-id>javaee.jsf.passwordValidator</validator-id>
+		<validator-class>javaee.jsf.PasswordValidator</validator-class>
+	</validator> --> 
+
+	<!-- <navigation-rule> <display-name>sections/content.xhtml</display-name> 
+		<from-view-id>/sections/content.xhtml</from-view-id> <navigation-case> <from-outcome>editStudent</from-outcome> 
+		<to-view-id>/editStudent.xhtml</to-view-id> </navigation-case> </navigation-rule> -->
+
+</faces-config>

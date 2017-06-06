@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<!--不知道上面的xmlns是什么，如果缺掉下面会警告  -->
+<h:body>
+	<h2>Welcome to Victorz's Web Book Shop ，#{userBean.name}</h2>
+	<f:view>
+		<h:form>
+			<div align="center">
+
+				<h:dataTable value="#{UserBean.books}" var="book"
+					captionStyle="font-size:1.4em;font-style:italic;font-weight:bold;color:red;"
+					style="width:250px;" border="3" styleClass="orders"
+					headerClass="ordersHeader" rowClasses="oddColumn,evenColumn"
+					rowIndexVar="row">
+
+					<f:facet name="caption">
+						<h3>All Books</h3>
+					</f:facet>
+
+					<h:column headerClass="columnHeader" footerClass="columnFooter">
+						<f:facet name="header">
+							<h:outputText value="Name " />
+						</f:facet>
+						<h:outputText value="#{book.name} " />
+						<!-- <h:commandLink action="#{tableBean.select}">
+						<h:outputText value="#{user.name}" />
+					</h:commandLink> -->
+					</h:column>
+
+
+
+					<h:column headerClass="columnHeader" footerClass="columnFooter">
+						<f:facet name="header">
+							<h:outputText value="Level" />
+						</f:facet>
+						<h:outputText value="#{book.lev}" />
+						<!-- <h:commandLink action="#{tableBean.select}">
+						<h:outputText value="#{user.name}" />
+					</h:commandLink> -->
+					</h:column>
+
+					<h:column headerClass="columnHeader" footerClass="columnFooter">
+						<f:facet name="header">
+							<h:outputText value="Info" />
+						</f:facet>
+						<h:outputText value="#{book.info}" />
+						<!-- <h:commandLink action="#{tableBean.select}">
+						<h:outputText value="#{user.name}" />
+					</h:commandLink> -->
+					</h:column>
+
+					<h:column headerClass="columnHeader" footerClass="columnFooter">
+						<f:facet name="header">
+							<h:outputText value="Money" />
+						</f:facet>
+						<h:outputText value="#{book.money}" />
+						<!-- <h:commandLink action="#{tableBean.select}">
+						<h:outputText value="#{user.name}" />
+					</h:commandLink> -->
+					</h:column>
+
+					<h:column headerClass="columnHeader" footerClass="columnFooter">
+						<f:facet name="header">
+							<h:outputText value="Number" />
+						</f:facet>
+						<h:outputText value="#{book.number}" />
+						<!-- <h:commandLink action="#{tableBean.select}">
+						<h:outputText value="#{user.name}" />
+					</h:commandLink> -->
+					</h:column>
+
+					<h:column>
+						<f:facet name="header">
+							<h:outputText value="Buy" />
+						</f:facet>
+						<h:commandLink id="Buy" value="Buy">
+							<!-- action="#{teacher.SetTeacher}" -->
+							<!-- <f:param name="teacherId" value="#{item.teacherId}"></f:param> -->
+						</h:commandLink>
+					</h:column>
+
+
+				</h:dataTable>
+
+			</div>
+		</h:form>
+		<!--  Selected Row: <h:outputText value="#{tableBean.selectedRowIndex}" /> -->
+	</f:view>
+</h:body>
+
+</html>

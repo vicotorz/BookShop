@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Login</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h3>Please enter your name and password.</h3>
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><h:inputText value="#{UserBean.name}" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><h:inputSecret value="#{UserBean.password}" /></td>
+			</tr>
+
+		</table>
+		<!-- <h:selectOneMenu value="#{user.user_role}">
+			<f:selectItem itemLabel="系统管理员" itemValue="user" />
+				<f:selectItem itemLabel="学生管理员" itemValue="student" />
+				<f:selectItem itemLabel="教师管理员" itemValue="teacher" />
+				<f:selectItem itemLabel="财务管理员" itemValue="manageE" />
+				<f:selectItem itemLabel="学生" itemValue="students" />
+		</h:selectOneMenu> -->
+		<p>
+			<h:commandButton value="Login" action="#{UserBean.VerifyPassword()}" />
+		</p>
+		<p>
+			<h:commandLink action="#{UserBean.forgetPassword()}"
+				value="Forget your password?Click here"></h:commandLink>
+		</p>
+
+		<p>
+			<h:commandLink action="#{UserBean.adduser()}" value="Register"></h:commandLink>
+		</p>
+	</h:form>
+</h:body>
+</html>

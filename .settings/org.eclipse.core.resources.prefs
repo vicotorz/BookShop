@@ -1,0 +1,12 @@
+#Wed Apr 12 23:26:56 CST 2017
+eclipse.preferences.version=1
+encoding//src/javaee/jsf/Gender.java=GBK
+encoding//src/javaee/jsf/PasswordValidator.java=GBK
+encoding//src/javaee/jsf/StuEntities/StudentEO.java=UTF-8
+encoding//src/javaee/jsf/StuEntities/book.java=GBK
+encoding//src/javaee/jsf/Student.java=UTF-8
+encoding//src/javaee/jsf/TableBean.java=GBK
+encoding//src/javaee/jsf/UserBean.java=GBK
+encoding//src/javaee/jsf/ejb/DBop.java=GBK
+encoding//src/javaee/jsf/fetchBean.java=GBK
+encoding/<project>=UTF-8

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSFFlowViewLayout version="1.0">
+  <Drawing gridVisible="true" snapOn="true" />
+  <JSFFlowResource path="/login.xhtml" location="383,0" dimension="112,36" />
+  <JSFFlowResource path="/mainview.xhtml" location="506,267" dimension="136,36" />
+  <JSFFlowResource path="/error.xhtml" location="0,156" dimension="113,36" />
+  <JSFFlowResource path="/fetchuser.xhtml" location="218,156" dimension="136,36" />
+  <JSFFlowResource path="/addUser.xhtml" location="459,156" dimension="133,36" />
+  <JSFFlowResource path="/fechsuc.xhtml" location="223,267" dimension="126,36" />
+  <JSFFlowNavigationCase id="/login.xhtml,/mainview.xhtml,success,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="481,36" />
+      <AbsolutePoint location="481,66" />
+      <AbsolutePoint location="622,66" />
+      <AbsolutePoint location="622,229" />
+      <AbsolutePoint location="608,229" />
+      <AbsolutePoint location="608,267" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/login.xhtml,/error.xhtml,failure,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="397,36" />
+      <AbsolutePoint location="397,66" />
+      <AbsolutePoint location="56,66" />
+      <AbsolutePoint location="56,156" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/login.xhtml,/fetchuser.xhtml,fetch,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="425,36" />
+      <AbsolutePoint location="425,96" />
+      <AbsolutePoint location="320,96" />
+      <AbsolutePoint location="320,156" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/login.xhtml,/addUser.xhtml,add,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="453,36" />
+      <AbsolutePoint location="453,96" />
+      <AbsolutePoint location="558,96" />
+      <AbsolutePoint location="558,156" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/fetchuser.xhtml,/fechsuc.xhtml,Yes,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="286,192" />
+      <AbsolutePoint location="286,267" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/fetchuser.xhtml,/fetchuser.xhtml,No,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="252,156" />
+      <AbsolutePoint location="252,126" />
+      <AbsolutePoint location="188,126" />
+      <AbsolutePoint location="188,174" />
+      <AbsolutePoint location="218,174" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/addUser.xhtml,/mainview.xhtml,main,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="525,192" />
+      <AbsolutePoint location="525,229" />
+      <AbsolutePoint location="540,229" />
+      <AbsolutePoint location="540,267" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/addUser.xhtml,/addUser.xhtml,stay,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="492,156" />
+      <AbsolutePoint location="492,126" />
+      <AbsolutePoint location="429,126" />
+      <AbsolutePoint location="429,174" />
+      <AbsolutePoint location="459,174" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+</JSFFlowViewLayout>
+
