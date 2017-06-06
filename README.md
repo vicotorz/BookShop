@@ -1,0 +1,2 @@
+# BookShop
+JSF+JPA+EJB
